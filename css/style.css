@@ -14,6 +14,18 @@ Button
 /*
  Nav styles
 */
+@media only screen and (max-width: 600px) {
+  .navbar-nav .navbar-collapse {
+    position: absolute;
+    width: 100%;
+    top: 56px;
+    /*height of navbar in mobile*/
+  }
+  .navbar-nav .nav-link {
+    text-align: center;
+  }
+}
+
 .navbar-nav .nav-item {
   margin-left: 20px;
 }
@@ -38,8 +50,9 @@ Button
 }
 
 .navbar-nav .nav-item .btn-cta:hover {
-  background-color: #e32b2b;
-  color: #fff;
+  border: 2px solid #fa5757;
+  background: none;
+  color: #fa5757;
 }
 
 /*
@@ -64,10 +77,14 @@ Hero Area styles
 #main .btn-wrapper .btn-chrome {
   background-color: #5368df;
   color: #fff;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 #main .btn-wrapper .btn-chrome:hover {
-  background-color: #344ac5;
+  border: 2px solid #5368df;
+  background: none;
+  color: #5368df;
 }
 
 #main .btn-wrapper .btn-firefox {

@@ -19,6 +19,16 @@ Button
  Nav styles
 */
 .navbar-nav {
+	@media only screen and (max-width: 600px) {
+		.navbar-collapse {
+			position: absolute;
+			width: 100%;
+			top: 56px; /*height of navbar in mobile*/
+		}
+		.nav-link{
+			text-align: center;
+		}
+	}
 	.nav-item {
 		margin-left: 20px;
 		.nav-link {
@@ -38,8 +48,9 @@ Button
 			font-weight: 500;
 		}
 		.btn-cta:hover {
-			background-color: hsl(0, 77%, 53%);
-			color: #fff;
+			border: 2px solid $primary-color;
+			background: none;
+			color: $primary-color;
 		}
 	}
 }
@@ -64,9 +75,12 @@ Hero Area styles
 		.btn-chrome {
 			background-color: $base-color;
 			color: #fff;
+			transition: all 0.5s ease-in-out 0s;
 		}
 		.btn-chrome:hover {
-			background-color: hsl(231, 58%, 49%);
+			border: 2px solid $base-color;
+			background: none;
+			color: $base-color;
 		}
 		.btn-firefox {
 			background-color: rgb(250, 253, 253);
