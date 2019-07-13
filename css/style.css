@@ -5,6 +5,13 @@ body {
 }
 
 /*
+Button
+*/
+.btn {
+  font-size: 14px;
+}
+
+/*
  Nav styles
 */
 .navbar-nav .nav-item {
@@ -33,5 +40,80 @@ body {
 .navbar-nav .nav-item .btn-cta:hover {
   background-color: #e32b2b;
   color: #fff;
+}
+
+/*
+Hero Area styles
+*/
+#main {
+  padding-top: 100px;
+}
+
+#main .main-title {
+  font-size: 50px;
+  text-transform: capitalize;
+  color: #252b46;
+}
+
+#main .main-para {
+  color: #9194a1;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#main .btn-wrapper .btn-chrome {
+  background-color: #5368df;
+  color: #fff;
+}
+
+#main .btn-wrapper .btn-chrome:hover {
+  background-color: #344ac5;
+}
+
+#main .btn-wrapper .btn-firefox {
+  background-color: #fafdfd;
+  color: #252b46;
+  -webkit-box-shadow: 0px 7px 11px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 7px 11px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+
+#main .btn-wrapper .btn-firefox:hover {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  background-color: #fa5757;
+  color: #fff;
+  -webkit-box-shadow: 0px 15px 20px rgba(239, 0, 0, 0.4);
+          box-shadow: 0px 15px 20px rgba(239, 0, 0, 0.4);
+}
+
+#main .btn-wrapper .btn-chrome,
+#main .btn-wrapper .btn-firefox {
+  font-weight: 500;
+  padding: 12px 26px;
+}
+
+#main .main-features-tab {
+  background: url(../images/illustration-hero.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: scroll;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#main .bg-main-features-tab {
+  position: absolute;
+  background-color: #5368df;
+  width: 433px;
+  height: 270px;
+  border-bottom-left-radius: 50%;
+  top: 120px;
+  left: 180px;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
