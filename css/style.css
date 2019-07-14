@@ -4,9 +4,12 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
-/*
-Button
-*/
+.section_title {
+  font-size: 36px;
+  color: #252b46;
+  text-align: center;
+}
+
 .btn {
   font-size: 14px;
 }
@@ -21,8 +24,15 @@ Button
     top: 56px;
     /*height of navbar in mobile*/
   }
+  .navbar-nav .navbar-nav {
+    padding-top: 150px;
+  }
   .navbar-nav .nav-link {
     text-align: center;
+  }
+  .navbar-nav .navbar-toggler {
+    border: none;
+    outline: none;
   }
 }
 
@@ -71,7 +81,7 @@ Hero Area styles
 #main .main-para {
   color: #9194a1;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 #main .btn-wrapper .btn-chrome {
@@ -132,5 +142,20 @@ Hero Area styles
   top: 120px;
   left: 180px;
   z-index: -1;
+}
+
+/*
+Features
+*/
+#features {
+  margin-top: 100px;
+}
+
+#features .features_para {
+  width: 47%;
+  margin: auto;
+  font-size: 18px;
+  color: #9194a1;
+  font-weight: 200;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,9 +9,11 @@ $primary-color: hsl(0, 94%, 66%);
 body {
 	font-family: 'Rubik', sans-serif;
 }
-/*
-Button
-*/
+.section_title {
+	font-size: 36px;
+	color: $dark-color;
+	text-align: center;
+}
 .btn {
 	font-size: 14px;
 }
@@ -25,9 +27,17 @@ Button
 			width: 100%;
 			top: 56px; /*height of navbar in mobile*/
 		}
-		.nav-link{
+		.navbar-nav{
+			padding-top: 150px;
+		}
+		.nav-link {
 			text-align: center;
 		}
+		.navbar-toggler{
+			border: none;
+			outline: none;
+		}
+
 	}
 	.nav-item {
 		margin-left: 20px;
@@ -69,7 +79,7 @@ Hero Area styles
 	.main-para {
 		color: $light-color;
 		font-size: 20px;
-		font-weight: 100;
+		font-weight: 200;
 	}
 	.btn-wrapper {
 		.btn-chrome {
@@ -120,5 +130,19 @@ Hero Area styles
 		top: 120px;
 		left: 180px;
 		z-index: -1;
+	}
+}
+
+/*
+Features
+*/
+#features {
+	margin-top: 100px;
+	.features_para {
+		width: 47%;
+		margin: auto;
+		font-size: 18px;
+		color: $light-color;
+		font-weight: 200;
 	}
 }
