@@ -158,4 +158,105 @@ Features
   color: #9194a1;
   font-weight: 200;
 }
+
+#features .features-tabs {
+  width: 60%;
+  margin: auto;
+}
+
+#features .features-tabs .nav-tabs .nav-item.show .nav-link,
+#features .features-tabs .nav-tabs .nav-link.active {
+  border-color: transparent transparent transparent;
+  border-bottom: 3px solid #fa5757 !important;
+  background-color: transparent;
+}
+
+#features .features-tabs .features-tabs-links a {
+  color: #252b46;
+  text-transform: capitalize;
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+#features .features-tabs .features-tabs-links a:hover {
+  color: #fa5757;
+  border: none;
+}
+
+#features .tab-content .section_title {
+  text-align: left;
+}
+
+#features .tab-content .tab-content-para {
+  color: #9194a1;
+  width: 80%;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+#features .tab-content .btn-primary {
+  text-transform: capitalize;
+  background-color: #5368df;
+}
+
+#features .tab-content .btn-primary:hover {
+  background-color: #334bd7;
+}
+
+#features .tab-content .img-wrapper {
+  position: relative;
+}
+
+#features .tab-content .features-tab-svg-1 {
+  background: url(../images/illustration-features-tab-1.svg);
+}
+
+#features .tab-content .features-tab-svg-2 {
+  background: url(../images/illustration-features-tab-2.svg);
+}
+
+#features .tab-content .features-tab-svg-3 {
+  background: url(../images/illustration-features-tab-3.svg);
+}
+
+#features .tab-content .features-tab-svg-1,
+#features .tab-content .features-tab-svg-2,
+#features .tab-content .features-tab-svg-3 {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 350px;
+}
+
+#features .tab-content .features-tab-svg-bg {
+  position: absolute;
+  background-color: #5368df;
+  border-bottom-right-radius: 50%;
+  width: 520px;
+  height: 350px;
+  top: 90px;
+  z-index: -1;
+  left: -50px;
+}
+
+#features .tab-content #easysharing .features-tab-svg-bg {
+  width: 420px;
+  height: 330px;
+  top: 70px;
+}
+
+#features .tab-content #easysharing .features-tab-svg-3 {
+  height: 350px;
+}
+
+#features .tab-content #speedysearch .features-tab-svg-bg {
+  width: 420px;
+  top: 70px;
+}
+
+#features .tab-content #speedysearch .features-tab-svg-2 {
+  height: 380px;
+}
 /*# sourceMappingURL=style.css.map */
