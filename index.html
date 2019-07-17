@@ -1,134 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Bookmark landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+	<!-- Bootstrap styles -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+	<!-- Normalize css -->
+	<link rel="stylesheet" href="./css/normalize.css" />
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.min.css"
+		integrity="sha256-AaQqnjfGDRZd/lUp0Dvy7URGOyRsh8g9JdWUkyYxNfI=" crossorigin="anonymous" />
+	<!-- custom styles -->
+	<link rel="stylesheet" href="./css/style.css" />
+	<!-- title -->
+	<title>Frontend Mentor | Bookmark landing page</title>
 </head>
+
 <body>
+	<!-- Nav section -->
+	<nav class="navbar navbar-expand-lg navbar-light pt-4">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="./images/logo-bookmark.svg" alt="Bookmark" />
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+				aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarMenu">
+				<ul class="navbar-nav ml-auto text-right order-md-0 order-last">
+					<li class="nav-item"><a class="nav-link" href="#">Features </a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Pricing </a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-cta btn-cta-login" href="#">Login</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Main section -->
+	<section id="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h1 class="main-title">A Simple Bookmark Manager</h1>
+					<p class="main-para">
+						A clean and simple interface to organize your favourite websites.
+						Open a new browser tab and see your sites load instantly. Try it
+						for free.</p>
+					<div class="btn-wrapper mt-5">
+						<a href="#" class="btn btn-chrome mr-3">Get it on Chrome</a>
+						<a href="#" class="btn btn-firefox">Get it on Firefox</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="main-features-tab">
+						<div class="bg-main-features-tab"></div>
+					</div>
+				</div>
+				<!-- Features section -->
+				<section id="features">
+					<h1 class="features_title section_title">Features</h1>
+					<p class="features_para text-center mb-5">Our aim is to make it quick and easy for you to access
+						your favourite websites. Your bookmarks sync between your devices so
+						you can access them on the go.</p>
+					<nav class="features-tabs">
+						<div class="nav nav-tabs features-tabs-links text-center" id="nav-tab" role="tablist">
+							<a class="nav-item nav-link active" id="bookmark-nav-tab" data-toggle="tab" role="tab"
+								href="#bookmarking" aria-controls="nav-bookmark" aria-selected="true">Simple
+								Bookmarking</a>
+							<a class="nav-item nav-link" href="#speedysearch" id="speedysearch-nav-tab"
+								data-toggle="tab" role="tab" aria-controls="nav-speedy" aria-selected="false">Speedy
+								Searching</a>
+							<a class="nav-item nav-link" href="#easysharing" id="easysharing-nav-tab" data-toggle="tab"
+								role="tab" aria-controls="nav-easy" aria-selected="false">Easy
+								Sharing</a>
+						</div>
+					</nav>
 
-  Features
-  Pricing
-  Contact
-  Login
+					<!-- tab content -->
+					<div class="tab-content py-5" id="nav-tabContent">
+						<div id="bookmarking" role="tabpanel" aria-labelledby="bookmark-nav-tab"
+							class="tab-pane fade show active features-tabs-info">
+							<div class="row">
+								<div class="img-wrapper col-md-6">
+									<div class="features-tab-svg-1"></div>
+									<div class="features-tab-svg-bg"></div>
+								</div>
+								<div class="col-md-6">
+									<h1 class="section_title">Bookmark in one click</h1>
+									<p class="tab-content-para">Organize your bookmarks however you
+										like. Our simple drag-and-drop interface gives you complete
+										control over how you manage your favourite sites.</p>
+									<a class="btn btn-primary" href="">More Info</a>
+								</div>
+							</div>
+						</div>
+						<div id="speedysearch" role="tabpanel" aria-labelledby="speedysearch-nav-tab"
+							class="tab-pane fade features-tabs-info">
+							<div class="row">
+								<div class="img-wrapper col-md-6">
+									<div class="features-tab-svg-2"></div>
+									<div class="features-tab-svg-bg"></div>
+								</div>
+								<div class="col-md-6">
+									<h1 class="section_title">Intelligent search</h1>
+									<p class="tab-content-para">Our powerful search feature will help you find saved
+										sites in no time at all.No need to trawl through all of your bookmarks.</p>
+									<a class="btn btn-primary" href="">More Info</a>
+								</div>
+							</div>
+						</div>
+						<div id="easysharing" role="tabpanel" aria-labelledby="easysharing-nav-tab"
+							class="tab-pane fade features-tabs-info">
+							<div class="row">
+								<div class="img-wrapper col-md-6">
+									<div class="features-tab-svg-3"></div>
+									<div class="features-tab-svg-bg"></div>
+								</div>
+								<div class="col-md-6">
+									<h1 class="section_title">Share your bookmarks</h1>
+									<p class="tab-content-para">Easily share your bookmarks and collections with others.
+										Create a shareable link that you can send at the click of a button.</p>
+									<a class="btn btn-primary" href="">More Info</a>
+								</div>
+							</div>
+						</div>
 
-  A Simple Bookmark Manager
+					</div>
+			</div>
+	</section>
 
-  A clean and simple interface to organize your favourite websites. Open a new 
-  browser tab and see your sites load instantly. Try it for free.
 
-  Get it on Chrome
-  Get it on Firefox
 
-  Features
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 
-  Our aim is to make it quick and easy for you to access your favourite websites. 
-  Your bookmarks sync between your devices so you can access them on the go.
+	<!-- <section id="download-extensions">
+					<h1>Download the extension</h1>
+					<p>We’ve got more browsers in the pipeline. Please do let us know if
+						you’ve got a favourite you’d like us to prioritize.</p>
+					<div class="row">
+						<div class="col-4">
+							<div class="card">
+								<img src="./images/logo-chrome.svg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Add to Chrome</h5>
+									<p class="card-text">Minimum version 62</p>
+									<img src="./images/bg-dots.svg" alt="" />
+									<a href="#" class="btn btn-primary">Add & Install Extension</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="card">
+								<img src="./images/logo-chrome.svg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">AAdd to Firefox</h5>
+									<p class="card-text">Minimum version 55</p>
+									<img src="./images/bg-dots.svg" alt="" />
+									<a href="#" class="btn btn-primary">Add & Install Extension</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="card">
+								<img src="./images/logo-chrome.svg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Add to Opera</h5>
+									<p class="card-text">Minimum version 46</p>
+									<img src="./images/bg-dots.svg" alt="" />
+									<a href="#" class="btn btn-primary">Add & Install Extension</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</section>
+	<section id="frequently-asked-question">
+		<h1>Frequently Asked Questions</h1>
+		<p>Here are some of our FAQs. If you have any other questions you’d like
+			answered please feel free to email us.</p>
+	</section> -->
 
-  Simple Bookmarking
-  Speedy Searching
-  Easy Sharing
 
-  Bookmark in one click
-
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.
-
-  More Info
-
-  Intelligent search
-
-  Our powerful search feature will help you find saved sites in no time at all. 
-  No need to trawl through all of your bookmarks.
-
-  More Info
-
-  Share your bookmarks
-
-  Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
-
-  More Info
-
-  Download the extension
-
-  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-  got a favourite you’d like us to prioritize.
-
-  Add to Chrome
-  Minimum version 62
-  Add & Install Extension
-
-  Add to Firefox
-  Minimum version 55
-  Add & Install Extension
-
-  Add to Opera
-  Minimum version 46
-  Add & Install Extension
-
-  Frequently Asked Questions
-  
-  Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us.
-
-  <!-- Question 1 -->
-  What is Bookmark?
-
-  <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-
-  <!-- Question 2 -->
-  How can I request a new browser?
-
-  <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-
-  <!-- Question 3 -->
-  Is there a mobile app?
-
-  <!-- Answer 3 -->
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum.
-
-  <!-- Question 4 -->
-  What about other Chromium browsers?
-
-  <!-- Answer 4 -->
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
-
-  More Info
-
-  35,000+ already joined
-
-  Stay up-to-date with what we’re doing
-
-  Contact Us
-
-  Features
-  Pricing
-  Contact
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+	<!-- <footer>
+					<p class="attribution">
+						Challenge by
+						<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded
+						by <a href="#">Your Name Here</a>.
+					</p>
+				</footer> -->
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="./js/custom.js"></script>
 </body>
+
 </html>
