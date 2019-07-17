@@ -27,17 +27,16 @@ body {
 			width: 100%;
 			top: 56px; /*height of navbar in mobile*/
 		}
-		.navbar-nav{
+		.navbar-nav {
 			padding-top: 150px;
 		}
 		.nav-link {
 			text-align: center;
 		}
-		.navbar-toggler{
+		.navbar-toggler {
 			border: none;
 			outline: none;
 		}
-
 	}
 	.nav-item {
 		margin-left: 20px;
@@ -144,5 +143,94 @@ Features
 		font-size: 18px;
 		color: $light-color;
 		font-weight: 200;
+	}
+	.features-tabs {
+		width: 60%;
+		margin: auto;
+		.nav-tabs .nav-item.show .nav-link,
+		.nav-tabs .nav-link.active {
+			border-color: transparent transparent transparent;
+			border-bottom: 3px solid $primary-color !important;
+			background-color: transparent;
+		}
+		.features-tabs-links a {
+			color: $dark-color;
+			text-transform: capitalize;
+			margin-right: 30px;
+			text-decoration: none;
+		}
+		.features-tabs-links a:hover {
+			color: $primary-color;
+			border: none;
+		}
+	}
+	.tab-content {
+		.section_title {
+			text-align: left;
+		}
+		.tab-content-para {
+			color: $light-color;
+			width: 80%;
+			font-size: 18px;
+			font-weight: 200;
+		}
+		.btn-primary {
+			text-transform: capitalize;
+			background-color: $base-color;
+		}
+		.btn-primary:hover {
+			background-color: hsl(231, 67%, 52%);
+		}
+		.img-wrapper {
+			position: relative;
+		}
+		.features-tab-svg-1 {
+			background: url(../images/illustration-features-tab-1.svg);
+		}
+		.features-tab-svg-2 {
+			background: url(../images/illustration-features-tab-2.svg);
+		}
+		.features-tab-svg-3 {
+			background: url(../images/illustration-features-tab-3.svg);
+		}
+		.features-tab-svg-1,
+		.features-tab-svg-2,
+		.features-tab-svg-3 {
+			background-repeat: no-repeat;
+			background-attachment: scroll;
+			background-position: center;
+			background-size: contain;
+			width: 100%;
+			height: 350px;
+		}
+		.features-tab-svg-bg {
+			position: absolute;
+			background-color: $base-color;
+			border-bottom-right-radius: 50%;
+			width: 520px;
+			height: 350px;
+			top: 90px;
+			z-index: -1;
+			left: -50px;
+		}
+		#easysharing {
+			.features-tab-svg-bg {
+				width: 420px;
+				height: 330px;
+				top: 70px;
+			}
+			.features-tab-svg-3 {
+				height: 350px;
+			}
+		}
+		#speedysearch {
+			.features-tab-svg-bg {
+				width: 420px;
+				top: 70px;
+			}
+			.features-tab-svg-2 {
+				height: 380px;
+			}
+		}
 	}
 }
