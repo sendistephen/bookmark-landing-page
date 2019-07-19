@@ -8,6 +8,7 @@ body {
   font-size: 36px;
   color: #252b46;
   text-align: center;
+  font-weight: 700;
 }
 
 .btn {
@@ -259,4 +260,77 @@ Features
 #features .tab-content #speedysearch .features-tab-svg-2 {
   height: 380px;
 }
+
+#download-extensions {
+  padding-top: 100px;
+}
+
+#download-extensions .extension-para {
+  color: #9194a1;
+  width: 50%;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+#download-extensions .row {
+  width: 68%;
+  margin: auto;
+}
+
+#download-extensions .card {
+  border: none;
+}
+
+#download-extensions .card img {
+  width: 100px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+#download-extensions .card-body h5 {
+  font-size: 18px;
+  color: #252b46;
+  font-weight: 600;
+}
+
+#download-extensions .card-body p {
+  font-size: 14px;
+  font-weight: 100;
+  color: #9194a1;
+}
+
+#download-extensions .btn-primary {
+  background-color: #5368df;
+  color: #fff;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#download-extensions .card-body {
+  position: relative;
+}
+
+#download-extensions .card-body img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 223px;
+  margin-left: -20px;
+  text-align: center;
+}
+
+#download-extensions .btn-primary:hover {
+  border: 2px solid #5368df;
+  background: none;
+  color: #5368df;
+}
+
+#download-extensions .col-md-4:nth-child(2) {
+  margin-top: 25px;
+}
+
+#download-extensions .col-md-4:nth-child(3) {
+  margin-top: 50px;
+}
+
 /*# sourceMappingURL=style.css.map */

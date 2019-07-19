@@ -13,6 +13,8 @@ body {
 	font-size: 36px;
 	color: $dark-color;
 	text-align: center;
+	font-weight: 700;
+
 }
 .btn {
 	font-size: 14px;
@@ -137,6 +139,7 @@ Features
 */
 #features {
 	margin-top: 100px;
+}
 	.features_para {
 		width: 47%;
 		margin: auto;
@@ -232,5 +235,65 @@ Features
 				height: 380px;
 			}
 		}
+	}
+}
+
+// Extension section
+#download-extensions {
+	padding-top: 100px;
+	.extension-para {
+		color: $light-color;
+		width: 50%;
+		margin: auto;
+		font-size: 18px;
+		font-weight: 200;
+	}
+	.row {
+		width: 68%;
+		margin: auto;
+	}
+	.card {
+		border: none;
+	}
+	.card img {
+		width: 100px;
+		margin: auto;
+		padding-top: 30px;
+	}
+	.card-body h5 {
+		font-size: 18px;
+		color: $dark-color;
+		font-weight: 600;
+	}
+	.card-body p {
+		font-size: 14px;
+		font-weight: 100;
+		color: $light-color;
+	}
+	.btn-primary {
+		background-color: $base-color;
+		color: #fff;
+		transition: all 0.5s ease-in-out 0s;
+	}
+	.card-body {
+		position: relative;
+	}
+	.card-body img {
+		box-sizing: content-box;
+		width: 223px;
+		margin-left: -20px;
+		text-align: center;
+	}
+
+	.btn-primary:hover {
+		border: 2px solid $base-color;
+		background: none;
+		color: $base-color;
+	}
+	.col-md-4:nth-child(2) {
+		margin-top: 25px;
+	}
+	.col-md-4:nth-child(3) {
+		margin-top: 50px;
 	}
 }
