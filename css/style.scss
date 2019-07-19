@@ -14,6 +14,7 @@ body {
 	color: $dark-color;
 	text-align: center;
 	font-weight: 700;
+
 }
 .btn {
 	font-size: 14px;
@@ -137,7 +138,8 @@ Hero Area styles
 Features
 */
 #features {
-	padding-top: 100px;
+	margin-top: 100px;
+}
 	.features_para {
 		width: 47%;
 		margin: auto;

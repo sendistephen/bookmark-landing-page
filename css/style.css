@@ -149,7 +149,7 @@ Hero Area styles
 Features
 */
 #features {
-  padding-top: 100px;
+  margin-top: 100px;
 }
 
 #features .features_para {
@@ -332,4 +332,5 @@ Features
 #download-extensions .col-md-4:nth-child(3) {
   margin-top: 50px;
 }
+
 /*# sourceMappingURL=style.css.map */
