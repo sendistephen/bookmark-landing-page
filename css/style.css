@@ -2,6 +2,7 @@
 /* Global Variables */
 body {
   font-family: 'Rubik', sans-serif;
+  overflow-x: hidden;
 }
 
 .section_title {
@@ -70,7 +71,7 @@ body {
 Hero Area styles
 */
 #main {
-  padding-top: 100px;
+  margin-top: 80px;
 }
 
 #main .main-title {
@@ -149,10 +150,10 @@ Hero Area styles
 Features
 */
 #features {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
-#features .features_para {
+.features_para {
   width: 47%;
   margin: auto;
   font-size: 18px;
@@ -160,69 +161,69 @@ Features
   font-weight: 200;
 }
 
-#features .features-tabs {
+.features-tabs {
   width: 60%;
   margin: auto;
 }
 
-#features .features-tabs .nav-tabs .nav-item.show .nav-link,
-#features .features-tabs .nav-tabs .nav-link.active {
+.features-tabs .nav-tabs .nav-item.show .nav-link,
+.features-tabs .nav-tabs .nav-link.active {
   border-color: transparent transparent transparent;
   border-bottom: 3px solid #fa5757 !important;
   background-color: transparent;
 }
 
-#features .features-tabs .features-tabs-links a {
+.features-tabs .features-tabs-links a {
   color: #252b46;
   text-transform: capitalize;
   margin-right: 30px;
   text-decoration: none;
 }
 
-#features .features-tabs .features-tabs-links a:hover {
+.features-tabs .features-tabs-links a:hover {
   color: #fa5757;
   border: none;
 }
 
-#features .tab-content .section_title {
+.tab-content .section_title {
   text-align: left;
 }
 
-#features .tab-content .tab-content-para {
+.tab-content .tab-content-para {
   color: #9194a1;
   width: 80%;
   font-size: 18px;
   font-weight: 200;
 }
 
-#features .tab-content .btn-primary {
+.tab-content .btn-primary {
   text-transform: capitalize;
   background-color: #5368df;
 }
 
-#features .tab-content .btn-primary:hover {
+.tab-content .btn-primary:hover {
   background-color: #334bd7;
 }
 
-#features .tab-content .img-wrapper {
+.tab-content .img-wrapper {
   position: relative;
 }
 
-#features .tab-content .features-tab-svg-1 {
+.tab-content .features-tab-svg-1 {
   background: url(../images/illustration-features-tab-1.svg);
 }
 
-#features .tab-content .features-tab-svg-2 {
+.tab-content .features-tab-svg-2 {
   background: url(../images/illustration-features-tab-2.svg);
 }
 
-#features .tab-content .features-tab-svg-3 {
+.tab-content .features-tab-svg-3 {
   background: url(../images/illustration-features-tab-3.svg);
 }
 
-#features .tab-content .features-tab-svg-1,
-#features .tab-content .features-tab-svg-2,
-#features .tab-content .features-tab-svg-3 {
+.tab-content .features-tab-svg-1,
+.tab-content .features-tab-svg-2,
+.tab-content .features-tab-svg-3 {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -231,7 +232,7 @@ Features
   height: 350px;
 }
 
-#features .tab-content .features-tab-svg-bg {
+.tab-content .features-tab-svg-bg {
   position: absolute;
   background-color: #5368df;
   border-bottom-right-radius: 50%;
@@ -242,27 +243,27 @@ Features
   left: -50px;
 }
 
-#features .tab-content #easysharing .features-tab-svg-bg {
+.tab-content #easysharing .features-tab-svg-bg {
   width: 420px;
   height: 330px;
   top: 70px;
 }
 
-#features .tab-content #easysharing .features-tab-svg-3 {
+.tab-content #easysharing .features-tab-svg-3 {
   height: 350px;
 }
 
-#features .tab-content #speedysearch .features-tab-svg-bg {
+.tab-content #speedysearch .features-tab-svg-bg {
   width: 420px;
   top: 70px;
 }
 
-#features .tab-content #speedysearch .features-tab-svg-2 {
+.tab-content #speedysearch .features-tab-svg-2 {
   height: 380px;
 }
 
 #download-extensions {
-  padding-top: 100px;
+  margin-top: 80px;
 }
 
 #download-extensions .extension-para {
@@ -333,4 +334,66 @@ Features
   margin-top: 50px;
 }
 
+#frequently-asked-question {
+  margin-top: 80px;
+}
+
+#frequently-asked-question .faq-para {
+  color: #9194a1;
+  width: 40%;
+  font-size: 18px;
+  font-weight: 200;
+  margin: auto;
+}
+
+#frequently-asked-question .accordion {
+  width: 60%;
+  margin: auto;
+}
+
+#frequently-asked-question .accordion .card {
+  border-left: none;
+  border-right: none;
+}
+
+#frequently-asked-question .accordion .card-header {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#frequently-asked-question .accordion .card-header:hover,
+#frequently-asked-question .accordion .card-header h5:hover {
+  color: #fa5757;
+}
+
+#frequently-asked-question .accordion .card-header h5 {
+  color: #252b46;
+  font-size: 18px;
+}
+
+#frequently-asked-question .accordion .fqa-para {
+  color: #9194a1;
+  font-weight: 200;
+}
+
+#frequently-asked-question .accordion .card-header h5 > span {
+  float: right;
+  color: #252b46;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#frequently-asked-question .accordion .card-header span i.fa-chevron-down:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  color: #454444;
+}
+
+#frequently-asked-question .accordion .btn-faq {
+  background-color: #5368df !important;
+}
+
+#frequently-asked-question .accordion .btn-faq:hover {
+  background-color: #334bd7 !important;
+}
 /*# sourceMappingURL=style.css.map */
