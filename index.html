@@ -17,6 +17,8 @@
     integrity="sha256-AaQqnjfGDRZd/lUp0Dvy7URGOyRsh8g9JdWUkyYxNfI=" crossorigin="anonymous" />
   <!-- custom styles -->
   <link rel="stylesheet" href="./css/style.css" />
+  <!-- font-awsome -->
+  <script src="https://kit.fontawesome.com/eca716265d.js"></script>
   <!-- title -->
   <title>Frontend Mentor | Bookmark landing page</title>
 </head>
@@ -177,21 +179,94 @@
         </div>
       </div>
   </section>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <!-- FAQ Section -->
+  <section id="frequently-asked-question" class="mt-5">
+    <h1 class="section_title">Frequently Asked Questions</h1>
+    <p class="faq-para text-center mb-5">Here are some of our FAQs. If you have any other questions you’d like
+      answered please feel free to email us.</p>
+
+    <div class="accordion" id="faq">
+      <div class="card">
+        <div class="card-header" id="qnOne">
+          <h5 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+            aria-controls="collapseOne">
+            What is Bookmark?<span><i class="fas fa-chevron-down"></i></span>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="qnOne" data-parent="#faq">
+          <div class="card-body">
+            <p class="fqa-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget
+              ultricies fringilla.
+              Phasellus blandit ipsum quis quam ornare mattis
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="qntwo">
+          <h5 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+            aria-controls="collapseTwo">
+            How can I request a new browser?<span><i class="fas fa-chevron-down"></i></span>
+          </h5>
+        </div>
+
+        <div id="collapseTwo" class="collapse" aria-labelledby="qntwo" data-parent="#faq">
+          <div class="card-body">
+            <p class="fqa-para"> Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non
+              ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue
+              massa, ultricies non ligula. Suspendisse imperdiet.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="qnThree">
+          <h5 class="mb-0" data-toggle="collapse" data-target="#collapseThreee" aria-expanded="true"
+            aria-controls="collapseThreee">
+            Is there a mobile app?<span><i class="fas fa-chevron-down"></i></span>
+          </h5>
+        </div>
+
+        <div id="collapseThreee" class="collapse" aria-labelledby="qnThree" data-parent="#faq">
+          <div class="card-body">
+            <p class="fqa-para">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut
+              condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="qnFour">
+          <h5 class="mb-0" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+            aria-controls="collapseFour">
+            What about other Chromium browsers?<span><i class="fas fa-chevron-down"></i></span>
+          </h5>
+        </div>
+
+        <div id="collapseFour" class="collapse" aria-labelledby="qnFour" data-parent="#faq">
+          <div class="card-body">
+            <p class="fqa-para"> Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui.
+              Aliquam vitae neque eget nisl gravida pellentesque non ut velit. More Info 35,000+ already joined Stay
+              up-to-date with what we’re doing Contact Us Features Pricing Contact.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4 text-center">
+        <a href="#" class="btn btn-primary btn-faq">More Info</a>
+      </div>
+    </div>
+  </section>
 
 
-	<section id="frequently-asked-question">
-		<h1>Frequently Asked Questions</h1>
-		<p>Here are some of our FAQs. If you have any other questions you’d like
-			answered please feel free to email us.</p>
-	</section> -->
-
-
-	<!-- <footer>
+  <!-- <footer>
 					<p class="attribution">
 						Challenge by
 						<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded
@@ -199,17 +274,17 @@
 					</p>
 				</footer> -->
 
-	<!-- Scripts -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"></script>
-	<script src="./js/custom.js"></script>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./js/custom.js"></script>
 </body>
 
 </html>
