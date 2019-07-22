@@ -354,3 +354,72 @@ Features
 		}
 	}
 }
+
+// Footer styles
+footer {
+	background-color: $base-color;
+	height: 100%;
+	width: 100%;
+	.footer-content span {
+		text-transform: uppercase;
+		font-weight: 100;
+	}
+	.footer-content h3 {
+		width: 35%;
+	}
+	form {
+		.form-group {
+			display: inline-block;
+		}
+		.btn-submit {
+			text-transform: capitalize;
+			background-color: $primary-color;
+			color: white;
+			display: inline;
+		}
+		.btn-submit:hover {
+			color: $primary-color;
+			background-color: #fff;
+			border: 2px solid $primary-color;
+		}
+	}
+	nav {
+		background-color: $dark-color;
+
+		.logo svg path {
+			fill: #fff;
+			cursor: pointer;
+		}
+		ul {
+			li a {
+				color: #fff;
+				font-weight: 400;
+				font-size: 14px;
+				text-transform: uppercase;
+			}
+			li a:hover {
+				color: $primary-color;
+			}
+		}
+	}
+	.footer-social-icons {
+		i:hover {
+			cursor: pointer;
+			color: $primary-color !important;
+		}
+	}
+	.attribution {
+		span > a {
+			color: red;
+		}
+		span > a:hover {
+			color: $primary-color;
+		}
+		p a {
+			color: red;
+		}
+		p a:hover {
+			color: $primary-color;
+		}
+	}
+}

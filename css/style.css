@@ -396,4 +396,77 @@ Features
 #frequently-asked-question .accordion .btn-faq:hover {
   background-color: #334bd7 !important;
 }
+
+footer {
+  background-color: #5368df;
+  height: 100%;
+  width: 100%;
+}
+
+footer .footer-content span {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+footer .footer-content h3 {
+  width: 35%;
+}
+
+footer form .form-group {
+  display: inline-block;
+}
+
+footer form .btn-submit {
+  text-transform: capitalize;
+  background-color: #fa5757;
+  color: white;
+  display: inline;
+}
+
+footer form .btn-submit:hover {
+  color: #fa5757;
+  background-color: #fff;
+  border: 2px solid #fa5757;
+}
+
+footer nav {
+  background-color: #252b46;
+}
+
+footer nav .logo svg path {
+  fill: #fff;
+  cursor: pointer;
+}
+
+footer nav ul li a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+footer nav ul li a:hover {
+  color: #fa5757;
+}
+
+footer .footer-social-icons i:hover {
+  cursor: pointer;
+  color: #fa5757 !important;
+}
+
+footer .attribution span > a {
+  color: red;
+}
+
+footer .attribution span > a:hover {
+  color: #fa5757;
+}
+
+footer .attribution p a {
+  color: red;
+}
+
+footer .attribution p a:hover {
+  color: #fa5757;
+}
 /*# sourceMappingURL=style.css.map */
