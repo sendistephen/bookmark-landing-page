@@ -8,13 +8,13 @@ $primary-color: hsl(0, 94%, 66%);
 
 body {
 	font-family: 'Rubik', sans-serif;
+	overflow-x: hidden;
 }
 .section_title {
 	font-size: 36px;
 	color: $dark-color;
 	text-align: center;
 	font-weight: 700;
-
 }
 .btn {
 	font-size: 14px;
@@ -71,7 +71,7 @@ Hero Area styles
 */
 
 #main {
-	padding-top: 100px;
+	margin-top: 80px;
 	.main-title {
 		font-size: 50px;
 		text-transform: capitalize;
@@ -138,109 +138,109 @@ Hero Area styles
 Features
 */
 #features {
-	margin-top: 100px;
+	margin-top: 80px;
 }
-	.features_para {
-		width: 47%;
-		margin: auto;
-		font-size: 18px;
+.features_para {
+	width: 47%;
+	margin: auto;
+	font-size: 18px;
+	color: $light-color;
+	font-weight: 200;
+}
+.features-tabs {
+	width: 60%;
+	margin: auto;
+	.nav-tabs .nav-item.show .nav-link,
+	.nav-tabs .nav-link.active {
+		border-color: transparent transparent transparent;
+		border-bottom: 3px solid $primary-color !important;
+		background-color: transparent;
+	}
+	.features-tabs-links a {
+		color: $dark-color;
+		text-transform: capitalize;
+		margin-right: 30px;
+		text-decoration: none;
+	}
+	.features-tabs-links a:hover {
+		color: $primary-color;
+		border: none;
+	}
+}
+.tab-content {
+	.section_title {
+		text-align: left;
+	}
+	.tab-content-para {
 		color: $light-color;
+		width: 80%;
+		font-size: 18px;
 		font-weight: 200;
 	}
-	.features-tabs {
-		width: 60%;
-		margin: auto;
-		.nav-tabs .nav-item.show .nav-link,
-		.nav-tabs .nav-link.active {
-			border-color: transparent transparent transparent;
-			border-bottom: 3px solid $primary-color !important;
-			background-color: transparent;
+	.btn-primary {
+		text-transform: capitalize;
+		background-color: $base-color;
+	}
+	.btn-primary:hover {
+		background-color: hsl(231, 67%, 52%);
+	}
+	.img-wrapper {
+		position: relative;
+	}
+	.features-tab-svg-1 {
+		background: url(../images/illustration-features-tab-1.svg);
+	}
+	.features-tab-svg-2 {
+		background: url(../images/illustration-features-tab-2.svg);
+	}
+	.features-tab-svg-3 {
+		background: url(../images/illustration-features-tab-3.svg);
+	}
+	.features-tab-svg-1,
+	.features-tab-svg-2,
+	.features-tab-svg-3 {
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center;
+		background-size: contain;
+		width: 100%;
+		height: 350px;
+	}
+	.features-tab-svg-bg {
+		position: absolute;
+		background-color: $base-color;
+		border-bottom-right-radius: 50%;
+		width: 520px;
+		height: 350px;
+		top: 90px;
+		z-index: -1;
+		left: -50px;
+	}
+	#easysharing {
+		.features-tab-svg-bg {
+			width: 420px;
+			height: 330px;
+			top: 70px;
 		}
-		.features-tabs-links a {
-			color: $dark-color;
-			text-transform: capitalize;
-			margin-right: 30px;
-			text-decoration: none;
-		}
-		.features-tabs-links a:hover {
-			color: $primary-color;
-			border: none;
+		.features-tab-svg-3 {
+			height: 350px;
 		}
 	}
-	.tab-content {
-		.section_title {
-			text-align: left;
-		}
-		.tab-content-para {
-			color: $light-color;
-			width: 80%;
-			font-size: 18px;
-			font-weight: 200;
-		}
-		.btn-primary {
-			text-transform: capitalize;
-			background-color: $base-color;
-		}
-		.btn-primary:hover {
-			background-color: hsl(231, 67%, 52%);
-		}
-		.img-wrapper {
-			position: relative;
-		}
-		.features-tab-svg-1 {
-			background: url(../images/illustration-features-tab-1.svg);
+	#speedysearch {
+		.features-tab-svg-bg {
+			width: 420px;
+			top: 70px;
 		}
 		.features-tab-svg-2 {
-			background: url(../images/illustration-features-tab-2.svg);
-		}
-		.features-tab-svg-3 {
-			background: url(../images/illustration-features-tab-3.svg);
-		}
-		.features-tab-svg-1,
-		.features-tab-svg-2,
-		.features-tab-svg-3 {
-			background-repeat: no-repeat;
-			background-attachment: scroll;
-			background-position: center;
-			background-size: contain;
-			width: 100%;
-			height: 350px;
-		}
-		.features-tab-svg-bg {
-			position: absolute;
-			background-color: $base-color;
-			border-bottom-right-radius: 50%;
-			width: 520px;
-			height: 350px;
-			top: 90px;
-			z-index: -1;
-			left: -50px;
-		}
-		#easysharing {
-			.features-tab-svg-bg {
-				width: 420px;
-				height: 330px;
-				top: 70px;
-			}
-			.features-tab-svg-3 {
-				height: 350px;
-			}
-		}
-		#speedysearch {
-			.features-tab-svg-bg {
-				width: 420px;
-				top: 70px;
-			}
-			.features-tab-svg-2 {
-				height: 380px;
-			}
+			height: 380px;
 		}
 	}
 }
 
 // Extension section
 #download-extensions {
-	padding-top: 100px;
+	margin-top: 80px;
+
 	.extension-para {
 		color: $light-color;
 		width: 50%;
@@ -295,5 +295,62 @@ Features
 	}
 	.col-md-4:nth-child(3) {
 		margin-top: 50px;
+	}
+}
+
+// FAQ styles
+#frequently-asked-question {
+	margin-top: 80px;
+	.faq-para {
+		color: $light-color;
+		width: 40%;
+		font-size: 18px;
+		font-weight: 200;
+		margin: auto;
+	}
+	.accordion {
+		width: 60%;
+		margin: auto;
+		.card {
+			border-left: none;
+			border-right: none;
+		}
+		.card-header {
+			background-color: #fff;
+			cursor: pointer;
+		}
+		.card-header:hover,
+		.card-header h5:hover {
+			color: $primary-color;
+		}
+		.card-header h5 {
+			color: $dark-color;
+			font-size: 18px;
+		}
+		.fqa-para {
+			color: $light-color;
+			font-weight: 200;
+		}
+
+		.card-header h5 > span {
+			float: right;
+			color: $dark-color;
+			font-size: 18px;
+			line-height: 22px;
+		}
+		.card-header span i.fa-chevron-down:after {
+			-webkit-transform: rotate(90deg);
+			-moz-transform: rotate(90deg);
+			-ms-transform: rotate(90deg);
+			-o-transform: rotate(90deg);
+			transform: rotate(90deg);
+			color: #454444;
+		}
+		.btn-faq {
+			background-color: $base-color !important;
+		}
+		.btn-faq:hover {
+			background-color: hsl(231, 67%, 52%) !important;
+		}
 	}
 }
