@@ -25,7 +25,7 @@
 
 <body>
   <!-- Nav section -->
-  <nav class="navbar navbar-expand-lg navbar-light pt-4">
+  <nav class="navbar navbar-expand-md navbar-light pt-4">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="./images/logo-bookmark.svg" alt="Bookmark" />
@@ -51,14 +51,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1 class="main-title">A Simple Bookmark Manager</h1>
-          <p class="main-para">
-            A clean and simple interface to organize your favourite websites.
-            Open a new browser tab and see your sites load instantly. Try it
-            for free.</p>
-          <div class="btn-wrapper mt-5">
-            <a href="#" class="btn btn-chrome mr-3">Get it on Chrome</a>
-            <a href="#" class="btn btn-firefox">Get it on Firefox</a>
+          <div class="main-content-wrapper">
+            <h1 class="main-title">A Simple Bookmark Manager</h1>
+            <p class="main-para">
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.</p>
+            <div class="btn-wrapper mt-5">
+              <a href="#" class="btn btn-chrome mr-3">Get it on Chrome</a>
+              <a href="#" class="btn btn-firefox">Get it on Firefox</a>
+            </div>
           </div>
         </div>
         <div class="col-md-6">
@@ -66,76 +68,90 @@
             <div class="bg-main-features-tab"></div>
           </div>
         </div>
-        <!-- Features section -->
-        <section id="features">
-          <h1 class="features_title section_title">Features</h1>
-          <p class="features_para text-center mb-5">Our aim is to make it quick and easy for you to access
-            your favourite websites. Your bookmarks sync between your devices so
-            you can access them on the go.</p>
-          <nav class="features-tabs">
-            <div class="nav nav-tabs features-tabs-links text-center" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link active" id="bookmark-nav-tab" data-toggle="tab" role="tab" href="#bookmarking"
-                aria-controls="nav-bookmark" aria-selected="true">Simple
-                Bookmarking</a>
-              <a class="nav-item nav-link" href="#speedysearch" id="speedysearch-nav-tab" data-toggle="tab" role="tab"
-                aria-controls="nav-speedy" aria-selected="false">Speedy
-                Searching</a>
-              <a class="nav-item nav-link" href="#easysharing" id="easysharing-nav-tab" data-toggle="tab" role="tab"
-                aria-controls="nav-easy" aria-selected="false">Easy
-                Sharing</a>
-            </div>
-          </nav>
+      </div>
+    </div>
+  </section>
+  <!-- Features section -->
+  <section id="features">
+    <div class="container">
+      <h1 class="features_title section_title">Features</h1>
+      <p class="features_para text-center mb-5">Our aim is to make it quick and easy for you to access
+        your favourite websites. Your bookmarks sync between your devices so
+        you can access them on the go.</p>
+      <nav class="features-tabs">
+        <div class="nav nav-tabs features-tabs-links text-center" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="bookmark-nav-tab" data-toggle="tab" role="tab" href="#bookmarking"
+            aria-controls="nav-bookmark" aria-selected="true">Simple
+            Bookmarking</a>
+          <a class="nav-item nav-link" href="#speedysearch" id="speedysearch-nav-tab" data-toggle="tab" role="tab"
+            aria-controls="nav-speedy" aria-selected="false">Speedy
+            Searching</a>
+          <a class="nav-item nav-link" href="#easysharing" id="easysharing-nav-tab" data-toggle="tab" role="tab"
+            aria-controls="nav-easy" aria-selected="false">Easy
+            Sharing</a>
+        </div>
+      </nav>
 
-          <!-- tab content -->
-          <div class="tab-content py-5" id="nav-tabContent">
-            <div id="bookmarking" role="tabpanel" aria-labelledby="bookmark-nav-tab"
-              class="tab-pane fade show active features-tabs-info">
-              <div class="row">
-                <div class="img-wrapper col-md-6">
-                  <div class="features-tab-svg-1"></div>
-                  <div class="features-tab-svg-bg"></div>
-                </div>
-                <div class="col-md-6">
-                  <h1 class="section_title">Bookmark in one click</h1>
-                  <p class="tab-content-para">Organize your bookmarks however you
-                    like. Our simple drag-and-drop interface gives you complete
-                    control over how you manage your favourite sites.</p>
-                  <a class="btn btn-primary" href="">More Info</a>
-                </div>
+      <!-- tab content -->
+      <div class="tab-content py-5" id="nav-tabContent">
+        <div id="bookmarking" role="tabpanel" aria-labelledby="bookmark-nav-tab"
+          class="tab-pane fade show active features-tabs-info">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="img-wrapper">
+                <div class="features-tab-svg-1"></div>
+                <div class="features-tab-svg-bg"></div>
               </div>
             </div>
-            <div id="speedysearch" role="tabpanel" aria-labelledby="speedysearch-nav-tab"
-              class="tab-pane fade features-tabs-info">
-              <div class="row">
-                <div class="img-wrapper col-md-6">
-                  <div class="features-tab-svg-2"></div>
-                  <div class="features-tab-svg-bg"></div>
-                </div>
-                <div class="col-md-6">
-                  <h1 class="section_title">Intelligent search</h1>
-                  <p class="tab-content-para">Our powerful search feature will help you find saved
-                    sites in no time at all.No need to trawl through all of your bookmarks.</p>
-                  <a class="btn btn-primary" href="">More Info</a>
-                </div>
-              </div>
-            </div>
-            <div id="easysharing" role="tabpanel" aria-labelledby="easysharing-nav-tab"
-              class="tab-pane fade features-tabs-info">
-              <div class="row">
-                <div class="img-wrapper col-md-6">
-                  <div class="features-tab-svg-3"></div>
-                  <div class="features-tab-svg-bg"></div>
-                </div>
-                <div class="col-md-6">
-                  <h1 class="section_title">Share your bookmarks</h1>
-                  <p class="tab-content-para">Easily share your bookmarks and collections with others.
-                    Create a shareable link that you can send at the click of a button.</p>
-                  <a class="btn btn-primary" href="">More Info</a>
-                </div>
+            <div class="col-md-6">
+              <div class="main-content">
+                <h1 class="section_title">Bookmark in one click</h1>
+                <p class="tab-content-para">Organize your bookmarks however you
+                  like. Our simple drag-and-drop interface gives you complete
+                  control over how you manage your favourite sites.</p>
+                <a class="btn btn-primary" href="">More Info</a>
               </div>
             </div>
           </div>
+        </div>
+
+        <div id="speedysearch" role="tabpanel" aria-labelledby="speedysearch-nav-tab"
+          class="tab-pane fade features-tabs-info">
+          <div class="row">
+            <div class="img-wrapper col-md-6">
+              <div class="features-tab-svg-2"></div>
+              <div class="features-tab-svg-bg"></div>
+            </div>
+            <div class="col-md-6">
+              <div class="tab-content">
+                <h1 class="section_title">Intelligent search</h1>
+                <p class="tab-content-para">Our powerful search feature will help you find saved
+                  sites in no time at all.No need to trawl through all of your bookmarks.</p>
+                <a class="btn btn-primary" href="">More Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="easysharing" role="tabpanel" aria-labelledby="easysharing-nav-tab"
+          class="tab-pane fade features-tabs-info">
+          <div class="row">
+            <div class="img-wrapper col-md-6">
+              <div class="features-tab-svg-3"></div>
+              <div class="features-tab-svg-bg"></div>
+            </div>
+            <div class="col-md-6">
+              <div class="tab-content">
+                <h1 class="section_title">Share your bookmarks</h1>
+                <p class="tab-content-para">Easily share your bookmarks and collections with others.
+                  Create a shareable link that you can send at the click of a button.</p>
+                <a class="btn btn-primary" href="">More Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
   </section>
 
   <section id="download-extensions">
@@ -181,86 +197,90 @@
   </section>
   <!-- FAQ Section -->
   <section id="frequently-asked-question" class="mt-5">
-    <h1 class="section_title">Frequently Asked Questions</h1>
-    <p class="faq-para text-center mb-5">Here are some of our FAQs. If you have any other questions you’d like
-      answered please feel free to email us.</p>
+    <div class="container">
+      <h1 class="section_title">Frequently Asked Questions</h1>
+      <p class="faq-para text-center mb-5">Here are some of our FAQs. If you have any other questions you’d like
+        answered please feel free to email us.</p>
 
-    <div class="accordion" id="faq">
-      <div class="card">
-        <div class="card-header" id="qnOne">
-          <h5 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-            aria-controls="collapseOne">
-            What is Bookmark?<span><i class="fas fa-chevron-down"></i></span>
-          </h5>
-        </div>
+      <div class="accordion" id="faq">
+        <div class="card">
+          <div class="card-header" id="qnOne">
+            <h5 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+              aria-controls="collapseOne">
+              What is Bookmark?<span><i class="fas fa-chevron-down"></i></span>
+            </h5>
+          </div>
 
-        <div id="collapseOne" class="collapse show" aria-labelledby="qnOne" data-parent="#faq">
-          <div class="card-body">
-            <p class="fqa-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget
-              ultricies fringilla.
-              Phasellus blandit ipsum quis quam ornare mattis
-            </p>
+          <div id="collapseOne" class="collapse show" aria-labelledby="qnOne" data-parent="#faq">
+            <div class="card-body">
+              <p class="fqa-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget
+                ultricies fringilla.
+                Phasellus blandit ipsum quis quam ornare mattis
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="card">
-        <div class="card-header" id="qntwo">
-          <h5 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-            aria-controls="collapseTwo">
-            How can I request a new browser?<span><i class="fas fa-chevron-down"></i></span>
-          </h5>
-        </div>
+        <div class="card">
+          <div class="card-header" id="qntwo">
+            <h5 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+              aria-controls="collapseTwo">
+              How can I request a new browser?<span><i class="fas fa-chevron-down"></i></span>
+            </h5>
+          </div>
 
-        <div id="collapseTwo" class="collapse" aria-labelledby="qntwo" data-parent="#faq">
-          <div class="card-body">
-            <p class="fqa-para"> Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non
-              ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue
-              massa, ultricies non ligula. Suspendisse imperdiet.
+          <div id="collapseTwo" class="collapse" aria-labelledby="qntwo" data-parent="#faq">
+            <div class="card-body">
+              <p class="fqa-para"> Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non
+                ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris
+                augue
+                massa, ultricies non ligula. Suspendisse imperdiet.
 
-            </p>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="card">
-        <div class="card-header" id="qnThree">
-          <h5 class="mb-0" data-toggle="collapse" data-target="#collapseThreee" aria-expanded="true"
-            aria-controls="collapseThreee">
-            Is there a mobile app?<span><i class="fas fa-chevron-down"></i></span>
-          </h5>
-        </div>
+        <div class="card">
+          <div class="card-header" id="qnThree">
+            <h5 class="mb-0" data-toggle="collapse" data-target="#collapseThreee" aria-expanded="true"
+              aria-controls="collapseThreee">
+              Is there a mobile app?<span><i class="fas fa-chevron-down"></i></span>
+            </h5>
+          </div>
 
-        <div id="collapseThreee" class="collapse" aria-labelledby="qnThree" data-parent="#faq">
-          <div class="card-body">
-            <p class="fqa-para">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut
-              condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
-              sollicitudin ex et ultricies bibendum.
-            </p>
+          <div id="collapseThreee" class="collapse" aria-labelledby="qnThree" data-parent="#faq">
+            <div class="card-body">
+              <p class="fqa-para">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut
+                condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+                sollicitudin ex et ultricies bibendum.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="card">
-        <div class="card-header" id="qnFour">
-          <h5 class="mb-0" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
-            aria-controls="collapseFour">
-            What about other Chromium browsers?<span><i class="fas fa-chevron-down"></i></span>
-          </h5>
-        </div>
+        <div class="card">
+          <div class="card-header" id="qnFour">
+            <h5 class="mb-0" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+              aria-controls="collapseFour">
+              What about other Chromium browsers?<span><i class="fas fa-chevron-down"></i></span>
+            </h5>
+          </div>
 
-        <div id="collapseFour" class="collapse" aria-labelledby="qnFour" data-parent="#faq">
-          <div class="card-body">
-            <p class="fqa-para"> Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui.
-              Aliquam vitae neque eget nisl gravida pellentesque non ut velit. More Info 35,000+ already joined Stay
-              up-to-date with what we’re doing Contact Us Features Pricing Contact.
-            </p>
+          <div id="collapseFour" class="collapse" aria-labelledby="qnFour" data-parent="#faq">
+            <div class="card-body">
+              <p class="fqa-para"> Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod
+                dui.
+                Aliquam vitae neque eget nisl gravida pellentesque non ut velit. More Info 35,000+ already joined Stay
+                up-to-date with what we’re doing Contact Us Features Pricing Contact.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="mt-4 text-center">
-        <a href="#" class="btn btn-primary btn-faq">More Info</a>
+        <div class="mt-4 text-center">
+          <a href="#" class="btn btn-primary btn-faq">More Info</a>
+        </div>
       </div>
     </div>
   </section>
@@ -312,12 +332,13 @@
     </nav>
 
     <div class="attribution">
-      <p class="text-white attribution text-center py-3">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded
-        by <span><a href="https://github.com/sendistephen/bookmark-landing-page">Ssendikadiwa Stephen.</a></span>
-      </p>
-    </div>
+      <div class="container">
+        <p class="text-white attribution text-center py-3">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded
+          by <span><a href="https://github.com/sendistephen/bookmark-landing-page">Ssendikadiwa Stephen.</a></span>
+        </p>
+      </div>
   </footer>
 
   <!-- Scripts -->
